@@ -12,7 +12,6 @@ Ele serve para organizar tarefas do dia a dia, permitindo:
 ## Tecnologias usadas
 
 - Vue 3
-- Vite
 - JavaScript
 - CSS
 
