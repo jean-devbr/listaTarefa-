@@ -44,13 +44,13 @@ watch(tasks, (newTasks) => {
     <ul>
       <li v-for="task in tasks" :key="task.id">
         
-        <input type="checkbox" v-model="task.done" />
-        
+      <input type="checkbox" v-model="task.done" />   
+      
       <span :style="{ textDecoration: task.done ? 'line-through' : 'none' }">
         {{ task.text }}
       </span>
-        
-        <button @click="removeTask(task.id)">X</button>
+      
+      <button @click="removeTask(task.id)" id="botao">X</button>
         
       </li>
     </ul>
@@ -67,5 +67,8 @@ ul {
   list-style: none;
   padding: 0;
 }
+#botao {
+  margin: 10px
 
+}
 </style>
